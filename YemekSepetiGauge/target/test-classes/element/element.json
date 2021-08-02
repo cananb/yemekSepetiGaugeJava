@@ -1,0 +1,92 @@
+[{
+  "key" : "selectCity",
+  "value": "a[data-catalog='TR_ISTANBUL']",
+  "type": "css"
+},
+  {
+    "key": "semtSecBtn",
+    "value": "span[class='select2-selection__placeholder']",
+    "type": "css"
+  },
+  {
+    "key": "semtSecInp",
+    "value": "input[class='select2-search__field']",
+    "type": "css"
+  },
+
+  {
+    "key": "aramaYapInp",
+    "value": "input[class*='search-box']",
+    "type": "css"
+  },
+  {
+    "key": "araBtn",
+    "value": "button[aria-label='ARA']",
+    "type": "css"
+  },
+  {
+    "key": "resultPage",
+    "value": "div[class='ys-result']",
+    "type": "css"
+  },
+  {
+    "key": "restName",
+    "value": "[class='restaurant-display-name'] a",
+    "type": "css"
+  },
+  {
+    "key": "restDetailPage",
+    "value": "[class='restaurantDetailBox favFoods'] [class='productName']",
+    "type": "css"
+  },
+  {
+    "key": "desertSelect",
+    "value": "span[id='select2-238b4a05-a919-40f5-ac3e-57189c51dbeb-container']",
+    "type": "css"
+  },
+  {
+    "key": "drinkSelect",
+    "value": "span[id='select2-34c2ef16-7100-4c78-9d49-2f7fa5d38f8f-container']",
+    "type": "css"
+  },
+  {
+    "key": "addToBasketBtn",
+    "value": "button[class='ys-btn ys-btn-primary ys-btn-lg pull-right add-to-basket']",
+    "type": "css"
+  },
+  {
+    "key": "basketBtn",
+    "value": "button[class='ys-btn ys-btn-block ys-btn-primary confirm-basket']",
+    "type": "css"
+  },
+  {
+    "key": "emailInp",
+    "value": "[id='inputEmail3']",
+    "type": "css"
+  },
+  {
+    "key": "passInp",
+    "value": "[id='inputPassword3']",
+    "type": "css"
+  },
+  {
+    "key": "summitBtn",
+    "value": "button[class='ys-btn ys-btn-primary ys-btn-lg ys-btn-block']",
+    "type": "css"
+  },
+  {
+    "key": "txtCount",
+    "value": "input[class='txtCount']",
+    "type": "css"
+  },
+  {
+    "key": "deleteIcon",
+    "value": "i[class*= 'ys-icons-Standard-icons-checkout-delete']",
+    "type": "css"
+  },
+  {
+    "key": "cancelBtn",
+    "value": "button[class='btn confirmButton ys-btn ys-btn-default']",
+    "type": "css"
+  }
+]

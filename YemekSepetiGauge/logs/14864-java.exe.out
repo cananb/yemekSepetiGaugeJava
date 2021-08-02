@@ -1,0 +1,360 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+2021-07-27 12:49:54,564 +03:00 DEBUG InternalLoggerFactory:45 newDefaultFactory - Using SLF4J as the default logging framework
+2021-07-27 12:49:54,567 +03:00 DEBUG PlatformDependent:1015 isWindows0 - Platform: Windows
+2021-07-27 12:49:54,571 +03:00 DEBUG PlatformDependent0:417 explicitNoUnsafeCause0 - -Dio.netty.noUnsafe: false
+2021-07-27 12:49:54,571 +03:00 DEBUG PlatformDependent0:885 javaVersion0 - Java version: 8
+2021-07-27 12:49:54,572 +03:00 DEBUG PlatformDependent0:130 <clinit> - sun.misc.Unsafe.theUnsafe: available
+2021-07-27 12:49:54,573 +03:00 DEBUG PlatformDependent0:154 <clinit> - sun.misc.Unsafe.copyMemory: available
+2021-07-27 12:49:54,574 +03:00 DEBUG PlatformDependent0:192 <clinit> - java.nio.Buffer.address: available
+2021-07-27 12:49:54,574 +03:00 DEBUG PlatformDependent0:257 <clinit> - direct buffer constructor: available
+2021-07-27 12:49:54,574 +03:00 DEBUG PlatformDependent0:331 <clinit> - java.nio.Bits.unaligned: available, true
+2021-07-27 12:49:54,575 +03:00 DEBUG PlatformDependent0:396 <clinit> - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2021-07-27 12:49:54,575 +03:00 DEBUG PlatformDependent0:403 <clinit> - java.nio.DirectByteBuffer.<init>(long, int): available
+2021-07-27 12:49:54,575 +03:00 DEBUG PlatformDependent:1058 unsafeUnavailabilityCause0 - sun.misc.Unsafe: available
+2021-07-27 12:49:54,575 +03:00 DEBUG PlatformDependent:1179 tmpdir0 - -Dio.netty.tmpdir: C:\Users\TESTIN~1\AppData\Local\Temp (java.io.tmpdir)
+2021-07-27 12:49:54,575 +03:00 DEBUG PlatformDependent:1258 bitMode0 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2021-07-27 12:49:54,577 +03:00 DEBUG PlatformDependent:177 <clinit> - -Dio.netty.maxDirectMemory: 1840250880 bytes
+2021-07-27 12:49:54,577 +03:00 DEBUG PlatformDependent:184 <clinit> - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2021-07-27 12:49:54,579 +03:00 DEBUG CleanerJava6:92 <clinit> - java.nio.ByteBuffer.cleaner(): available
+2021-07-27 12:49:54,579 +03:00 DEBUG PlatformDependent:204 <clinit> - -Dio.netty.noPreferDirect: false
+2021-07-27 12:49:54,904 +03:00 DEBUG MultithreadEventLoopGroup:44 <clinit> - -Dio.netty.eventLoopThreads: 16
+2021-07-27 12:49:54,919 +03:00 DEBUG InternalThreadLocalMap:56 <clinit> - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2021-07-27 12:49:54,919 +03:00 DEBUG InternalThreadLocalMap:59 <clinit> - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2021-07-27 12:49:54,925 +03:00 DEBUG NioEventLoop:106 <clinit> - -Dio.netty.noKeySetOptimization: false
+2021-07-27 12:49:54,926 +03:00 DEBUG NioEventLoop:107 <clinit> - -Dio.netty.selectorAutoRebuildThreshold: 512
+2021-07-27 12:49:54,935 +03:00 DEBUG PlatformDependent:919 <clinit> - org.jctools-core.MpscChunkedArrayQueue: available
+{"logLevel":"debug","message":"gauge-java took 803milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 803"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+2021-07-27 12:49:54,977 +03:00 DEBUG ResourceLeakDetector:130 <clinit> - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: sımple
+2021-07-27 12:49:54,977 +03:00 DEBUG ResourceLeakDetector:131 <clinit> - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+2021-07-27 12:49:54,978 +03:00 DEBUG PooledByteBufAllocator:154 <clinit> - -Dio.netty.allocator.numHeapArenas: 16
+2021-07-27 12:49:54,978 +03:00 DEBUG PooledByteBufAllocator:155 <clinit> - -Dio.netty.allocator.numDirectArenas: 16
+2021-07-27 12:49:54,978 +03:00 DEBUG PooledByteBufAllocator:157 <clinit> - -Dio.netty.allocator.pageSize: 8192
+2021-07-27 12:49:54,978 +03:00 DEBUG PooledByteBufAllocator:162 <clinit> - -Dio.netty.allocator.maxOrder: 11
+2021-07-27 12:49:54,978 +03:00 DEBUG PooledByteBufAllocator:166 <clinit> - -Dio.netty.allocator.chunkSize: 16777216
+2021-07-27 12:49:54,978 +03:00 DEBUG PooledByteBufAllocator:167 <clinit> - -Dio.netty.allocator.smallCacheSize: 256
+2021-07-27 12:49:54,979 +03:00 DEBUG PooledByteBufAllocator:168 <clinit> - -Dio.netty.allocator.normalCacheSize: 64
+2021-07-27 12:49:54,979 +03:00 DEBUG PooledByteBufAllocator:169 <clinit> - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2021-07-27 12:49:54,979 +03:00 DEBUG PooledByteBufAllocator:170 <clinit> - -Dio.netty.allocator.cacheTrimInterval: 8192
+2021-07-27 12:49:54,979 +03:00 DEBUG PooledByteBufAllocator:171 <clinit> - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2021-07-27 12:49:54,979 +03:00 DEBUG PooledByteBufAllocator:172 <clinit> - -Dio.netty.allocator.useCacheForAllThreads: true
+2021-07-27 12:49:54,979 +03:00 DEBUG PooledByteBufAllocator:173 <clinit> - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2021-07-27 12:49:55,018 +03:00 DEBUG DefaultChannelId:79 <clinit> - -Dio.netty.processId: 13668 (auto-detected)
+2021-07-27 12:49:55,021 +03:00 DEBUG NetUtil:139 <clinit> - -Djava.net.preferIPv4Stack: false
+2021-07-27 12:49:55,021 +03:00 DEBUG NetUtil:140 <clinit> - -Djava.net.preferIPv6Addresses: false
+2021-07-27 12:49:55,206 +03:00 DEBUG NetUtil:224 <clinit> - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2021-07-27 12:49:55,208 +03:00 DEBUG NetUtil:289 run - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2021-07-27 12:49:55,440 +03:00 DEBUG DefaultChannelId:101 <clinit> - -Dio.netty.machineId: 40:1c:83:ff:fe:5a:25:da (auto-detected)
+2021-07-27 12:49:55,462 +03:00 DEBUG ByteBufUtil:87 <clinit> - -Dio.netty.allocator.type: pooled
+2021-07-27 12:49:55,462 +03:00 DEBUG ByteBufUtil:96 <clinit> - -Dio.netty.threadLocalDirectBufferSize: 0
+2021-07-27 12:49:55,462 +03:00 DEBUG ByteBufUtil:99 <clinit> - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+{"logLevel":"debug","message":"started gRPC server on port 58294"}
+{"logLevel":"info","message":"Listening on port:58294"}
+2021-07-27 12:49:55,516 +03:00 DEBUG AbstractByteBuf:63 <clinit> - -Dio.grpc.netty.shaded.io.netty.buffer.checkAccessible: true
+2021-07-27 12:49:55,517 +03:00 DEBUG AbstractByteBuf:64 <clinit> - -Dio.grpc.netty.shaded.io.netty.buffer.checkBounds: true
+2021-07-27 12:49:55,518 +03:00 DEBUG ResourceLeakDetectorFactory:196 newResourceLeakDetector - Loaded default ResourceLeakDetector: io.grpc.netty.shaded.io.netty.util.ResourceLeakDetector@5347ced
+2021-07-27 12:49:55,614 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+2021-07-27 12:49:55,618 +03:00 DEBUG Recycler:100 <clinit> - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2021-07-27 12:49:55,619 +03:00 DEBUG Recycler:101 <clinit> - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2021-07-27 12:49:55,619 +03:00 DEBUG Recycler:102 <clinit> - -Dio.netty.recycler.linkCapacity: 16
+2021-07-27 12:49:55,619 +03:00 DEBUG Recycler:103 <clinit> - -Dio.netty.recycler.ratio: 8
+2021-07-27 12:49:55,619 +03:00 DEBUG Recycler:104 <clinit> - -Dio.netty.recycler.delayedQueue.ratio: 8
+2021-07-27 12:49:55,626 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+2021-07-27 12:49:55,635 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND SETTINGS: ack=false settings={}
+2021-07-27 12:49:55,638 +03:00 DEBUG NettyServerHandler:191 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND SETTINGS: ack=true
+2021-07-27 12:49:55,638 +03:00 DEBUG NettyServerHandler:191 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND SETTINGS: ack=true
+2021-07-27 12:49:55,643 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=1 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:55,663 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=1 padding=0 endStream=true length=64 bytes=000000003b0a0f7b7d2073616e6979652062656b6c6510011a260a0f7b7d2073616e6979652062656b6c6512103c333e2073616e6979652062656b6c651a0133
+2021-07-27 12:49:55,664 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:55,680 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.waitForSecond' and 'org.canan.yemeksepeti.step.StepImplementation.waitForSecond'"}
+{"logLevel":"debug","message":"Found {} saniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.selectByVisibleText' and 'org.canan.yemeksepeti.step.StepImplementation.selectByVisibleText'"}
+{"logLevel":"debug","message":"Found {} elementine {} değerini seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.selectByIndex' and 'org.canan.yemeksepeti.step.StepImplementation.selectByIndex'"}
+{"logLevel":"debug","message":"Found {} elementine {} sırasındaki değeri seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.findElementGetText' and 'org.canan.yemeksepeti.step.StepImplementation.findElementGetText'"}
+{"logLevel":"debug","message":"Found {} elementinde {} değerini bul {} tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.clickElement' and 'org.canan.yemeksepeti.step.StepImplementation.clickElement'"}
+{"logLevel":"debug","message":"Found {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.sendKeysElement' and 'org.canan.yemeksepeti.step.StepImplementation.sendKeysElement'"}
+{"logLevel":"debug","message":"Found {} elementine {} değeri yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.sendKeysPressEnter' and 'org.canan.yemeksepeti.step.StepImplementation.sendKeysPressEnter'"}
+{"logLevel":"debug","message":"Found {} elementine {} değeri yaz tıkla in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} elementine {} sırasındaki değeri seç : public void selectByIndex(String key, ınt index)"}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitForSecond(ınt second) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} elementine {} değeri yaz : public void sendKeysElement(String key, String text)"}
+{"logLevel":"debug","message":"\t{} elementine tıkla : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} elementinde {} değerini bul {} tıkla : public void findElementGetText(String key, String text, String optinalKey)"}
+{"logLevel":"debug","message":"\t{} elementine {} değeri yaz tıkla : public void sendKeysPressEnter(String key, String text)"}
+{"logLevel":"debug","message":"\t{} elementine {} değerini seç : public void selectByVisibleText(String key, String text)"}
+2021-07-27 12:49:59,367 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=1 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,375 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=1 padding=0 endStream=false length=7 bytes=00000000020801
+2021-07-27 12:49:59,375 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=1 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,378 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,379 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,379 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,379 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=3 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,380 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=3 padding=0 endStream=true length=97 bytes=000000005c0a147b7d20656c656d656e74696e652074c4b16b6c6110011a420a147b7d20656c656d656e74696e652074c4b16b6c61121e3c73656c6563744369...
+2021-07-27 12:49:59,380 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,380 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,381 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+2021-07-27 12:49:59,381 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,382 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,382 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,382 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,382 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,382 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=5 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,383 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=5 padding=0 endStream=true length=189 bytes=00000000b80a237b7d20656c656d656e74696e65207b7d206465c49f6572692079617a2074c4b16b6c6110021a8e010a237b7d20656c656d656e74696e65207b...
+2021-07-27 12:49:59,383 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,383 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,384 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=5 padding=0 endStream=false length=7 bytes=00000000020801
+2021-07-27 12:49:59,384 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,385 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,385 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,385 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,385 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,385 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=7 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,386 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=7 padding=0 endStream=true length=141 bytes=00000000880a1c7b7d20656c656d656e74696e65207b7d206465c49f6572692079617a10021a660a1c7b7d20656c656d656e74696e65207b7d206465c49f6572...
+2021-07-27 12:49:59,386 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,386 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=7 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,387 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=7 padding=0 endStream=false length=7 bytes=00000000020801
+2021-07-27 12:49:59,388 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=7 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,388 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,388 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,389 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,389 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,389 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=9 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,389 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=9 padding=0 endStream=true length=279 bytes=00000001120a297b7d20656c656d656e74696e6465207b7d206465c49f6572696e692062756c207b7d2074c4b16b6c6110031ae2010a297b7d20656c656d656e...
+2021-07-27 12:49:59,389 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,390 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=9 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,390 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=9 padding=0 endStream=false length=7 bytes=00000000020801
+2021-07-27 12:49:59,390 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=9 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,391 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,391 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,391 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,391 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,392 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=11 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,392 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=11 padding=0 endStream=true length=162 bytes=000000009d0a1f7b7d20656c656d656e74696e65207b7d206465c49f6572696e69207365c3a710021a780a1f7b7d20656c656d656e74696e65207b7d206465c4...
+2021-07-27 12:49:59,393 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,393 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=11 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,394 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=11 padding=0 endStream=false length=7 bytes=00000000020801
+2021-07-27 12:49:59,394 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=11 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,395 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,395 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,395 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,395 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,417 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=13 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/InitializeSuiteDataStore, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,417 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=13 padding=0 endStream=true length=5 bytes=0000000000
+2021-07-27 12:49:59,418 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,418 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,422 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=13 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,424 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=13 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:49:59,424 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=13 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,425 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,425 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,425 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,426 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=15 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,427 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=15 padding=0 endStream=true length=102 bytes=00000000610a5f2a1059656d656b536570657469476175676532170a0f686964652d73756767657374696f6e12047472756532180a106d616368696e652d7265...
+2021-07-27 12:49:59,427 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,430 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,436 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=15 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,436 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=15 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:49:59,437 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=15 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,437 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,438 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,438 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,438 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=17 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/InitializeSpecDataStore, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,438 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=17 padding=0 endStream=true length=5 bytes=0000000000
+2021-07-27 12:49:59,439 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,439 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,440 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=17 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,441 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=17 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:49:59,441 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=17 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,442 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,442 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,442 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,443 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=19 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartSpecExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,444 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=19 padding=0 endStream=true length=237 bytes=00000000e80ae5010a83010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:49:59,444 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,445 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,445 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=19 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,445 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=19 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:49:59,445 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=19 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,446 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,446 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,446 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,447 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=21 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/InitializeScenarioDataStore, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,447 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=21 padding=0 endStream=true length=5 bytes=0000000000
+2021-07-27 12:49:59,447 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,448 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:49:59,448 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=21 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:49:59,449 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=21 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:49:59,449 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=21 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:49:59,449 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:49:59,449 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:49:59,450 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:49:59,450 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=23 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartScenarioExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:49:59,451 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=23 padding=0 endStream=true length=290 bytes=000000011d0a9a020a83010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:49:59,451 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:49:59,452 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+Tem 27, 2021 12:49:59 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 7945
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1627379400.446][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1627379400.446][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+Tem 27, 2021 12:50:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-07-27 12:50:08,264 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=23 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:08,265 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=23 padding=0 endStream=false length=10 bytes=00000000050a0330e944
+2021-07-27 12:50:08,265 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=23 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:08,266 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=10
+2021-07-27 12:50:08,266 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:08,266 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:08,268 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=25 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartStepExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:08,268 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=25 padding=0 endStream=true length=334 bytes=00000001490ac6020a83010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:50:08,269 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:08,271 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:08,272 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=25 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:08,285 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=25 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:50:08,286 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=25 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:08,286 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:50:08,286 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:08,287 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:08,287 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=27 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ExecuteStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:08,288 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=27 padding=0 endStream=true length=45 bytes=00000000280a102233222073616e6979652062656b6c65120f7b7d2073616e6979652062656b6c652203120133
+2021-07-27 12:50:08,288 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+{"logLevel":"debug","message":"Executing '{} saniye bekle' using 'class org.canan.yemeksepeti.step.StepImplementation.waitForSecond"}
+2021-07-27 12:50:08,290 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:11,316 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=27 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:11,317 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=27 padding=0 endStream=false length=10 bytes=00000000050a0330d017
+2021-07-27 12:50:11,318 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=27 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:11,319 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=10
+2021-07-27 12:50:11,320 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:11,320 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:11,321 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=29 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishStepExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:11,321 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=29 padding=0 endStream=true length=334 bytes=00000001490ac6020a83010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:50:11,322 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:11,325 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:11,325 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=29 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:11,326 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=29 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:50:11,326 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=29 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:11,328 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:50:11,328 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:11,328 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:11,330 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=31 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartStepExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:11,330 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=31 padding=0 endStream=true length=362 bytes=00000001650ae2020a83010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:50:11,330 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:11,331 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:11,332 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=31 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:11,332 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=31 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:50:11,333 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=31 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:11,334 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:50:11,334 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:11,334 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:11,334 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=33 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ExecuteStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:11,335 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=33 padding=0 endStream=true length=73 bytes=00000000440a1e2273656c656374436974792220656c656d656e74696e652074c4b16b6c6112147b7d20656c656d656e74696e652074c4b16b6c61220c120a73...
+2021-07-27 12:50:11,335 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+{"logLevel":"debug","message":"Executing '{} elementine tıkla' using 'class org.canan.yemeksepeti.step.StepImplementation.clickElement"}
+2021-07-27 12:50:11,335 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:11,341 +03:00 INFO  StoreHelper:70 getFileList - json uzantılı dosya sayısı: 1
+2021-07-27 12:50:14,089 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=33 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:14,090 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=33 padding=0 endStream=false length=10 bytes=00000000050a0330c215
+2021-07-27 12:50:14,090 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=33 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:14,091 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=10
+2021-07-27 12:50:14,091 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:14,091 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:14,091 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=35 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishStepExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:14,092 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=35 padding=0 endStream=true length=362 bytes=00000001650ae2020a83010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:50:14,092 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:14,093 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:14,093 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=35 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:14,094 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=35 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:50:14,094 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=35 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:14,094 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:50:14,095 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:14,095 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:14,095 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=37 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartStepExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:14,096 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=37 padding=0 endStream=true length=442 bytes=00000001b50ab2030a83010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:50:14,096 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:14,096 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:14,096 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=37 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:14,097 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=37 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:50:14,097 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=37 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:14,098 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:50:14,098 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:14,098 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:14,099 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=39 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ExecuteStep, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:14,099 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=39 padding=0 endStream=true length=151 bytes=00000000920a432273656d74536563496e702220656c656d656e74696e6520224d616c746570652028c387c4b16e6172204d61682e2922206465c49f65726920...
+2021-07-27 12:50:14,099 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+{"logLevel":"debug","message":"Executing '{} elementine {} değeri yaz tıkla' using 'class org.canan.yemeksepeti.step.StepImplementation.sendKeysPressEnter"}
+2021-07-27 12:50:14,100 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:45,696 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=39 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:45,697 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=39 padding=0 endStream=false length=678 bytes=00000002a10a9e0508011ad9016f72672e6f70656e71612e73656c656e69756d2e54696d656f7574457863657074696f6e3a20457870656374656420636f6e64...
+2021-07-27 12:50:45,697 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=39 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:45,698 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=678
+2021-07-27 12:50:45,698 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:45,698 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:45,698 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=41 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishStepExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:45,699 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=41 padding=0 endStream=true length=1059 bytes=000000041e0a9b080a85010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:50:45,699 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:45,700 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:45,700 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=41 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:45,700 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=41 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:50:45,701 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=41 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:45,701 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:50:45,702 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:45,702 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:45,702 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=43 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishScenarioExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:45,703 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=43 padding=0 endStream=true length=296 bytes=00000001230aa0020a85010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:50:45,703 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:45,706 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:46,335 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=43 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:46,336 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=43 padding=0 endStream=false length=10 bytes=00000000050a0330f404
+2021-07-27 12:50:46,336 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=43 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:46,337 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=10
+2021-07-27 12:50:46,337 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:46,337 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:46,338 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=45 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishSpecExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:46,339 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=45 padding=0 endStream=true length=241 bytes=00000000ec0ae9010a85010a1a47657474696e67205374617274656420776974682047617567651265433a5c55736572735c74657374696e69756d5c4465736b...
+2021-07-27 12:50:46,339 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:46,340 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:46,340 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=45 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:46,340 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=45 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:50:46,340 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=45 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:46,341 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:50:46,341 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:46,341 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:46,343 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=47 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishExecution, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:46,343 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=47 padding=0 endStream=true length=102 bytes=00000000610a5f2a1059656d656b536570657469476175676532170a0f686964652d73756767657374696f6e12047472756532180a106d616368696e652d7265...
+2021-07-27 12:50:46,343 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+2021-07-27 12:50:46,344 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:46,344 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=47 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:46,345 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=47 padding=0 endStream=false length=7 bytes=00000000020a00
+2021-07-27 12:50:46,345 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=47 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:46,345 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+2021-07-27 12:50:46,345 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:46,345 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:46,389 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND HEADERS: streamId=49 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/Kill, :authority: 127.0.0.1:58294, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.38.0] padding=0 endStream=false
+2021-07-27 12:50:46,390 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND DATA: streamId=49 padding=0 endStream=true length=5 bytes=0000000000
+2021-07-27 12:50:46,390 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=false bytes=1234
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+2021-07-27 12:50:46,398 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=49 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+2021-07-27 12:50:46,398 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND DATA: streamId=49 padding=0 endStream=false length=5 bytes=0000000000
+2021-07-27 12:50:46,398 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND HEADERS: streamId=49 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+2021-07-27 12:50:46,399 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=true bytes=1234
+2021-07-27 12:50:46,399 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=5
+2021-07-27 12:50:46,399 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] INBOUND PING: ack=false bytes=145258749040133895
+2021-07-27 12:50:46,399 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND PING: ack=true bytes=145258749040133895
+2021-07-27 12:50:46,401 +03:00 DEBUG NettyServerHandler:214 log - [id: 0x5bb90c90, L:/127.0.0.1:58294 - R:/127.0.0.1:58295] OUTBOUND GO_AWAY: lastStreamId=49 errorCode=0 length=0 bytes=
+{"logLevel":"debug","message":"Runner killed gracefully."}

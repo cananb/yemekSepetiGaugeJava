@@ -1,0 +1,8 @@
+[
+	"C:\\Program Files\\Gauge\\bin\\gauge.exe",
+	"run",
+	"--machine-readable",
+	"--hide-suggestion",
+	"--simple-console",
+	"C:/Users/testinium/Desktop/YemekSepetiGauge2/YemekSepetiGauge/YemekSepetiGauge/specs/YemekSepeti.spec:9"
+]

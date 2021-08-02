@@ -1,0 +1,41 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 664milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 664"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 56088"}
+{"logLevel":"info","message":"Listening on port:56088"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.waitForSecond' and 'org.canan.yemeksepeti.step.StepImplementation.waitForSecond'"}
+{"logLevel":"debug","message":"Found {} saniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.selectByVisibleText' and 'org.canan.yemeksepeti.step.StepImplementation.selectByVisibleText'"}
+{"logLevel":"debug","message":"Found {} elementine {} değerini seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.selectByIndex' and 'org.canan.yemeksepeti.step.StepImplementation.selectByIndex'"}
+{"logLevel":"debug","message":"Found {} elementine {} sırasındaki değeri seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.findElementGetText' and 'org.canan.yemeksepeti.step.StepImplementation.findElementGetText'"}
+{"logLevel":"debug","message":"Found {} elementinde {} değerini bul {} tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.selectByVisibleText' and 'org.canan.yemeksepeti.step.StepImplementation.selectByValue'"}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.selectByValue' and 'org.canan.yemeksepeti.step.StepImplementation.selectByValue'"}
+{"logLevel":"debug","message":"Found {} elementine {} değerini seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.clickElement' and 'org.canan.yemeksepeti.step.StepImplementation.clickElement'"}
+{"logLevel":"debug","message":"Found {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.sendKeysElement' and 'org.canan.yemeksepeti.step.StepImplementation.sendKeysElement'"}
+{"logLevel":"debug","message":"Found {} elementine {} değeri yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.canan.yemeksepeti.step.StepImplementation.sendKeysPressEnter' and 'org.canan.yemeksepeti.step.StepImplementation.sendKeysPressEnter'"}
+{"logLevel":"debug","message":"Found {} elementine {} değeri yaz tıkla in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} elementine {} sırasındaki değeri seç : public void selectByIndex(String key, ınt index)"}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitForSecond(ınt second) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} elementine {} değeri yaz : public void sendKeysElement(String key, String text)"}
+{"logLevel":"debug","message":"\t{} elementine tıkla : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} elementinde {} değerini bul {} tıkla : public void findElementGetText(String key, String text, String optinalKey)"}
+{"logLevel":"debug","message":"\t{} elementine {} değeri yaz tıkla : public void sendKeysPressEnter(String key, String text)"}
+{"logLevel":"debug","message":"\t{} elementine {} değerini seç : public void selectByVisibleText(String key, String text)"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

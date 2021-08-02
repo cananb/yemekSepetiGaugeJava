@@ -1,0 +1,46 @@
+Created by testinium on 1.07.2021
+
+This is a concept file with following syntax for each concept.
+# Bir şehir seç
+* "3" saniye bekle
+* "selectCity" elementine tıkla
+
+#  değerleri gir ve listele
+* "semtSecBtn" elementine tıkla
+* "semtSecInp" elementine "Maltepe (Çınar Mah.)" değeri yaz tıkla
+* "aramaYapInp" elementine "Pizza" değeri yaz
+* "araBtn" elementine tıkla
+* "3" saniye bekle
+
+# Restaurant ara
+* "restName" elementinde "Domino's Pizza, Maltepe (İdealtepe Mah.)" değerini bul tıkla
+* "3" saniye bekle
+
+# Menü ara
+* "restDetailPage" elementinde "Büyük Boy Pizzalar" değerini bul tıkla
+* "3" saniye bekle
+
+# Menü Detay seçimi yap
+* "desertSelect" elementine "Tavukgöğsü" değerini seç
+* "drinkSelect" elementine "Fanta" değerini seç
+* "addToBasketBtn" elementine tıkla
+* "3" saniye bekle
+
+# Sepeti onayla
+* "basketBtn" elementine tıkla
+* "3" saniye bekle
+
+# Kullanıcı girişi yap
+* "emailInp" elementine "demotestotomasyon.dto@gmail.com" değeri yaz
+* "passInp" elementine "Demo3436." değeri yaz
+* "summitBtn" elementine tıkla
+* "3" saniye bekle
+
+# Sipariş adetini arttır
+*"txtCount" elementine "2" değeri yaz
+* "3" saniye bekle
+
+# Siparişi temizle ve çıkış yap
+* "deleteIcon" elementine tıkla
+* "cancelBtn" elementine tıkla
+* "3" saniye bekle

@@ -1,0 +1,1 @@
+var index = {"Tags":{"Yemek_Sepeti_Senaryo":["specs/YemekSepeti.html"]},"Specs":{"Getting Started with Gauge":["specs/YemekSepeti.html"]}};
